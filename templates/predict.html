@@ -1,0 +1,29 @@
+{% extends 'header.html' %}
+
+{% block content %}
+    <div class="col-lg-12 col-md-12 col-sm-12">
+    <h3>Most possible called...</h3>
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Possible Name</th>
+                    <th scope="col">Probability %</th>
+                    <th scope="col">ImagenetID</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for single in data.predictions %}
+                    <tr>
+                        <td>{{ single.label }}</td>
+                        <td>{{ single.probability * 100|round(mode='ceil')}}%</td>
+                        <td>{{ single.imagenetID }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <br />
+    
+
+{% endblock %}
