@@ -1,6 +1,18 @@
 # HackUNO
 HackUNO event @ PKI260 (April 2019)
 
+## Software Dependencies
+* Python3
+* PIP
+ 
+
+## Local Installation
+* Step 1: git clone https://github.com/brlrb/HackUNO.git
+* Step 2: source imagify/bin/activate
+* Step 3: pip3 install requirements.txt
+* Step 4: python3 main.py
+
+
 ## Technologies Used
 * Keras (https://keras.io)
 * Tensorflow (https://tensorflow.org)
