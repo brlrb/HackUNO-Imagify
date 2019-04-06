@@ -1,5 +1,7 @@
-# HackUNO
-HackUNO event @ PKI260 (April 2019)
+# HackUNO-Imagify
+> HackUNO-Imagify is an educational web app that will allow you to take picture and give you prediction what the image is all about, including relevant images in Google and a Image description on Dictionary.com
+
+> HackUNO event @ PKI260 (April 2019)
 
 ## Software Dependencies
 * Python3
@@ -26,3 +28,5 @@ HackUNO event @ PKI260 (April 2019)
 ## Programming Tools used
 * Visual Studio Code
 * Github
+
+### Please let me know if you have any questions via the #issue tab. Thank you!!!
