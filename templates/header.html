@@ -4,54 +4,30 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
-        <a class="navbar-brand" href="/">IMAGIFY - Educate users by taking a picture(snap)</a>
+        <a class="navbar-brand" href="/">IMAGIFY - <small>Educate users by taking a picture(snap)</small> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- <div class="collapse navbar-collapse" id="navbarResponsive">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
+                    <a class="nav-link" href="/">Predict
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/faqs">FAQs
+                    </a>
+                </li>
             </ul>
-        </div> -->
+        </div>
     </div>
 </nav>
 <br/>
-<hr />
-
-
 
 <div class="container">
     <div class="row">
         {% block content %}{% endblock %}
-   
-        <div class="col-lg-12 col-md-12 col-sm-12">
-            <br />
-            <hr />
-            <br />
-            <h2><b>FAQs</b></h2>
-            <small><b>What Imagify does?</b></small>
-            <ul class="list-group list-group">
-                <li class="list-group-item small">Lets you upload image</li>
-                <li class="list-group-item small">Predicts what the image is all about</li>
-                <li class="list-group-item small">Gives you multiple probability what the image could be... and options to find more similar images in Google.com + Meaning of the Image via Dictionary.com</li>
-                <li class="list-group-item small"><i>Helps you learn by taking the picture of things you do not know</i></li>
-            </ul>
-            <hr />
-            <small><b>HowTos, Overview and References.</b></small>
-            <ul class="list-group list-group">
-                <li class="list-group-item small">Imagify is build using Keras(Highlevel API), Backend Tensorflow, 
-                Python, Flask, and other minor dependencies </li>
-                <li class="list-group-item small">I borrowed the code logics from https://blog.keras.io</li>
-                <li class="list-group-item small">I referred to several tutorials on https://python.org</li>
-                <li class="list-group-item small">I referred to several Stackoverflow QA</li>
-            </ul>
-            <hr />
-            <div class="alert alert-primary" role="alert"> Available in Github @ https://github.com/brlrb </div>
-        </div>
-        <div style="text-align: center; font-family: 'Courier New', Courier, monospace; font-size: 14px; padding-bottom: 10px"> Imagify Education App built at HackUNO Event</div> 
+        <div style="text-align: center; font-family: 'Courier New', Courier, monospace; font-size: 14px; padding: 10px"> Imagify Education App built at HackUNO Event</div> 
     </div>
 </div>

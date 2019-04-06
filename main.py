@@ -46,6 +46,11 @@ def index():
 
 
 
+@app.route("/faqs")
+def faqs():
+    return render_template('faqs.html')
+
+
 
 @app.route("/predict", methods=["POST"])
 def predict():
