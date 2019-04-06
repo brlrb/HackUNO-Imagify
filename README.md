@@ -1,5 +1,5 @@
 # HackUNO
-HackUNO event
+HackUNO event @ PKI260 (April 2019)
 
 ## Technologies Used
 * Keras (https://keras.io)
