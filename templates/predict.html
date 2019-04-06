@@ -15,8 +15,9 @@
             <tbody>
                 {% for single in data.predictions %}
                     <tr>
-                        <td>{{ single.label }}</td>
-                        <td>{{ single.probability * 100|round(mode='ceil')}}%</td>
+                        <td>{{ single.label }} <a class="small" href="https://www.google.com/search?tbm=isch&q={{single.label}}" target="_blank">Search Google </a></td>
+                        <td>{{ (single.probability * 100) | round(2, 'floor')}}%</td>
+
                         <td>{{ single.imagenetID }}</td>
                     </tr>
                 {% endfor %}
