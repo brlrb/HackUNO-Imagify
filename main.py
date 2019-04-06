@@ -42,23 +42,6 @@ def prepare_image(image, target):
 
 @app.route("/")
 def index():
-    # return  '''
-    #     <html>
-    #         <head>
-    #             <title>Imagify</title>
-    #         </head>
-    #         <body>
-    #             <h1>This is Imagify App</h1>
-    #             <h2>Take image to predict</h2>
-    #             <form action="http://127.0.0.1:5000/predict" method="POST" enctype = "multipart/form-data">
-    #                 <input type="file" name="pic" accept="image/*;capture=camera">
-    #                 <input type="submit">
-    #             </form>
-    #         </body>
-    #     </html>
-
-    # '''
-    
     return render_template('index.html')
 
 
@@ -98,11 +81,6 @@ def predict():
             data["success"] = True
 
     return render_template('predict.html', data = data)
-
-
-    # return the data dictionary as a JSON response
-    # return data.predictions[0]
-    # return flask.jsonify(data)
 
 
 
